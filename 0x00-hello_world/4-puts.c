@@ -1,3 +1,8 @@
+/*
+ * File: 4-puts.c
+ * Auth: Brennan D Baraban <375@holbertonschool.com>
+ */
+
 #include <stdio.h>
 
 /**
@@ -6,9 +11,9 @@
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 
-	return (0);}
+	return (0);
+}
