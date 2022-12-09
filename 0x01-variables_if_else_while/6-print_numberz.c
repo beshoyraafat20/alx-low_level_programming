@@ -1,6 +1,6 @@
 /*
  * File: 6-print_numberz.c
- * Auth: Brennan D Baraban
+ * Auth: Beshoy Raafat
  */
 
 #include <stdio.h>
