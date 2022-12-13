@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_alphabet - Prints the alphabet in lowercase.
  *
@@ -9,11 +9,12 @@
 void print_alphabet(void)
 {
 	int i = 0;
-	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz"
-	for (i > 26; i++;)
+	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
+	for (i > 26; i++;);
 	{
 		_putchar(alphabet[i]);
 	}
-	
-	return (0);
+
+	_putchar('\n');
+
 }
