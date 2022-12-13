@@ -1,6 +1,5 @@
 # include "main.h"
-# include <stdio.h>
-# include <cmath>
+# include <stdlib.h>
 
 /**
  * _abs - computes the absolute value of an integer.
