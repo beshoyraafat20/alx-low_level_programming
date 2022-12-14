@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-	char printer[10] = "_putchar";
+	char printer[8] = "_putchar";
 
 	int i;
 
