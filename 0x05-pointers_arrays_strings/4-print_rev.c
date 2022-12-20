@@ -1,20 +1,22 @@
-# include <stdio.h>
-# include <string.h>
-# include "main.h"
+#include "main.h"
 
-
+/**
+ * print_rev - a function that prints a string.
+ * @s: input string.
+ * Return: no return.
+ */
 void print_rev(char *s)
 {
-	len = strlen(*s);
-	left = 0;
-	right = len - 1;
+	int x = 0;
 
-	for (i = left; i <right; i++)  
-	{  
-        	temp = *s[i];  
-		*s[i] = *s[right];  
-		*s[right] = temp;  
-		right--;  
-	}  
-    printf ("%s",  str);
+	while (x >= 0)
+	{
+		if (s[x] == '\0')
+			break;
+		x++;
+	}
+
+	for (x--; x >= 0; x--)
+		_putchar(s[x]);
+	_putchar('\n');
 }
