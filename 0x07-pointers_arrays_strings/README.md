@@ -97,3 +97,54 @@ The C standard library provides a number of functions for manipulating strings. 
 - `memset`: fills a block of memory with a specified value
 - `memcpy`: copies a block of memory from one location to another
 - `memmove`: copies a block of memory from one location to another, even if the locations overlap
+It is important to note that these functions only work with null-terminated strings, which means that the strings must end with a '\0' character.
+
+# Example usage of some of these functions:
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+char str1[20] = "Hello";
+char str2[20] = "World";
+char str3[20];
+
+// strlen
+printf("str1 length: %lu\n", strlen(str1));
+
+// strcpy
+strcpy(str3, str1);
+printf("str3: %s\n", str3);
+
+// strcat
+strcat(str1, str2);
+printf("str1: %s\n", str1);
+
+// strcmp
+if (strcmp(str1, str2) == 0) {
+printf("str1 and str2 are equal\n");
+} else {
+printf("str1 and str2 are not equal\n");
+}
+
+// strstr
+if (strstr(str1, "Wor") != NULL) {
+printf("'Wor' found in str1\n");
+}
+
+// memset
+memset(str3, 'a', 3);
+printf("str3: %s\n", str3);
+
+return 0;
+}
+
+Output:
+
+str1 length: 5
+str3: Hello
+str1: HelloWorld
+str1 and str2 are not equal
+'Wor' found in str1
+str3: aaa
