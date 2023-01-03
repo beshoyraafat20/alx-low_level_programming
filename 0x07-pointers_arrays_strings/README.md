@@ -92,4 +92,8 @@ The C standard library provides a number of functions for manipulating strings. 
 - `strncat`: concatenates at most n characters of one null-terminated string to the end of another
 - `strcmp`: compares two null-terminated strings
 - `strncmp`: compares at most n characters of two null-terminated strings
-- `strch
+- `strstr`: searches for the first occurrence of a null-terminated string within another null-terminated string
+- `strtok`: breaks a null-terminated string into a series of tokens, based on a specified delimiter
+- `memset`: fills a block of memory with a specified value
+- `memcpy`: copies a block of memory from one location to another
+- `memmove`: copies a block of memory from one location to another, even if the locations overlap
