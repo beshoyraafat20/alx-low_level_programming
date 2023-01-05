@@ -9,7 +9,7 @@ int **pp;
 To use a pointer to a pointer, you can first assign the address of a pointer to it using the `&` operator. Then, you can use the pointer to pointer to access the value stored at the address stored in the pointer.
 
 Example:
-
+```
 #include <stdio.h>
 
 int main(void)
@@ -26,12 +26,13 @@ int main(void)
 
    return 0;
 }
-
+```
 Output:
-
+```
 x = 10
 x = 20
 x = 30
+```
 
 Pointers to pointers can be useful in situations where you need to pass a pointer to a function and modify the value stored at the address stored in the pointer.
 
@@ -40,7 +41,7 @@ Pointers to pointers can be useful in situations where you need to pass a pointe
 Multidimensional arrays are arrays of arrays, which means that they are arrays that contain a fixed number of elements, each of which is an array. Each element in a multidimensional array is also known as a "row".
 
 Declaring a 2D array:
-
+```
 int array[2][3];
 
 Initializing a 2D array:
@@ -49,13 +50,14 @@ int array[2][3] = {
    {1, 2, 3},
    {4, 5, 6}
 };
-
+```
 Accessing elements in a 2D array:
 
-array[i][j]
+`array[i][j]`
 
 Printing the elements of a 2D array:
 
+```
 #include <stdio.h>
 
 int main(void)
@@ -75,12 +77,13 @@ int main(void)
 
    return 0;
 }
+```
 
 Output:
-
+```
 1 2 3
 4 5 6
-
+```
 # C Standard Library Functions for String Manipulation
 
 The C standard library provides a number of functions for manipulating strings. Here are some of the most commonly used ones:
@@ -100,7 +103,7 @@ The C standard library provides a number of functions for manipulating strings. 
 It is important to note that these functions only work with null-terminated strings, which means that the strings must end with a '\0' character.
 
 # Example usage of some of these functions:
-
+```
 #include <stdio.h>
 #include <string.h>
 
@@ -139,9 +142,11 @@ printf("str3: %s\n", str3);
 
 return 0;
 }
+```
 
 Output:
 
+```
 str1 length: 5
 str3: Hello
 str1: HelloWorld
