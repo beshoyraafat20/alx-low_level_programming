@@ -4,7 +4,7 @@ Pointers to pointers are variables that store the memory address of a pointer. T
 
 Declaring a pointer to a pointer:
 
-int **pp;
+`int **pp;`
 
 To use a pointer to a pointer, you can first assign the address of a pointer to it using the `&` operator. Then, you can use the pointer to pointer to access the value stored at the address stored in the pointer.
 
